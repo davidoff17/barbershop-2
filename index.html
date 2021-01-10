@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<meta lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="page__body ">
+
+<header class="page-header">
+    <a class="page-header__logo">
+    <picture>
+      <source media= "(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media= "(min-width: 768px)"  srcset="img/logotype-tablet.svg">
+      <img src= "img/logotype-mobile.svg"  width="226" height="30" alt="Barbershop">
+   </picture>
+
+    </a>
+      <nav class="main-nav main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                   <a>
+                      Главная
+                   </a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">
+                      Наши работы
+                  </a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">
+                      Записаться
+                  </a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">
+                      Контакты
+                  </a>
+              </li>
+              <li class="site-list__item">
+                  <a href="#">
+                      Академия
+                  </a>
+              </li>
+             </ul>
+             <ul class="main-nav__list user-list">
+                 <li class="user-list__item">
+                     <a class="user-list__login js-login" href="login.html">
+                         <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                             <g opacity="0.3">
+                                 <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white"/>
+                                 <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white"/>
+                             </g>
+                         </svg>
+                         <span>   Войти     </span>
+                     </a>
+                 </li>
+             </ul>
+          </div>
+      </nav>
+  </header>
+
+<h1 class="visually-hidden"> Barbershop - истинно мужская классика</h1>
+
+<section class="stats">
+    <header class="stats__header">
+      <svg class="stats__header--angle" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+        <path d="M0 0H23V23L11.5 11.5L0 0Z" fill="black"/>
+      </svg>
+        <h2 class="visually-hidden">
+            Статистика Барбершопа
+        </h2>
+        <p class="stats__slogan">
+            Стрижка у нас<br> это выгодно!
+        </p>
+        <p class="stats__intro">
+            Мужская стрижка требует <br>
+            точного подхода. Обратимся<br>к статистике:
+        </p>
+        <small class=" stats__legend stats__legend--top">
+            *&nbsp;- приведенные данные ложь
+        </small>
+    </header>
+
+    <dl class="stats__list">
+        <div class="stats__item">
+            <dt class="stats__number">
+                1500<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                рублей <br> вложений
+            </dd>
+        </div>
+        <div class="stats__item">
+            <dt class="stats__number">
+                7200<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                секунд <br> времени мастера
+            </dd>
+        </div>
+        <div class="stats__item">
+            <dt class="stats__number">
+                90000<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                постриженных <br> волос
+            </dd>
+        </div>
+        <div class="stats__item">
+            <dt class="stats__number">
+                500000<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                рублей <br> вложений
+            </dd>
+        </div>
+    </dl>
+    <small class="stats__legend stats__legend--bottom">
+    </small>
+</section>
+
+<body class="advantages">
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <div class="advantages__wrapper slider">
+        <ul class="advantages__list slider__list">
+            <li class="advantages__item--fast slider__item">
+                <h3 class="advantages__title">Быстро</h3>
+                <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минуты.</p>
+            </li>
+            <li class="advantages__item--cool slider__item">
+                <h3 class="advantages__title">Круто</h3>
+                <p class="advantages__description">Мы делаем свою работу круто! Два часа пролетят -  и вот вы рок-звезда.</p>
+            </li>
+            <li class="advantages__item--price slider__item">
+                <h3 class="advantages__title">Дорого</h3>
+                <p class="advantages__description">Мы делаем свою работу дорого! Два часа пролетят заметно. Разве цена не дает определенный статус?</p>
+            </li>
+        </ul>
+        <p class="advantages__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current"
+                    type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+        </p>
+
+    </div>
+
+    <section class="news">
+        <h2 class="news__title">Новости и акции</h2>
+
+        <div class="news__list">
+            <a class="news__item" href="#">
+                <time class="news__date" datetime="2017-09-29">
+                    <b class="news__day">29</b> сент
+                </time>
+                <p class="news__text"> Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </a>
+            <a class="news__item" href="#">
+                <time class="news__date" datetime="2017-09-19">
+                    <b class="news__day">19</b> сент
+                </time>
+                <p class="news__text"> Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </a>
+            <a class="news__item" href="#">
+                <time class="news__date" datetime="2017-09-09">
+                    <b class="news__day">9</b> сент
+                </time>
+                <p class="news__text"> Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </a>
+        </div>
+        <a class="news__to-all button" href="#">Показать все</a>
+    </section>
+    <section class="reviews">
+        <h2 class="review__title">Отзывы о нас</h2>
+        <div class="reviews__list">
+            <blockquote class="reviews__item slider-item--current">
+                <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+                <div class="reviews__author-info">
+                    <cite class="reviews__author-name"> Трэвис Баркер
+                    </cite>
+                    <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, а тут такое!</p>
+                </div>
+            </blockquote>
+            <blockquote class="reviews__item slider-item">
+                <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+                <div class="reviews__author-info">
+                    <cite class="reviews__author-name"> Трэвис Баркер
+                    </cite>
+                    <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, а тут такое!</p>
+                </div>
+            </blockquote>
+            <blockquote class="reviews__item slider-item">
+                <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+                <div class="reviews__author-info">
+                    <cite class="reviews__author-name"> Трэвис Баркер
+                    </cite>
+                    <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, а тут такое!</p>
+                </div>
+            </blockquote>
+            <button class="reviews__prev" type="button">
+                Предыдущий отзыв
+            </button>
+            <button class="reviews__prev" type="button">
+                Следующий отзыв
+            </button>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current"
+                type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+        </p>
+    </section>
+ </main>
+    <footer class="page-footer">
+        <div class="page-footer__contacts contacts">
+            <b class="contacts__title"> Барбершоп</b>
+            <p class="contacts__text">
+                г.Харьков, ул. Маршалла Конева <br>
+                <a class="contacts-phone" href="tel:+879125678">
+                    <span class="contacts__phone-mobile">Тел.:</span> +7 (929) 39783
+                </a>
+            </p>
+        </div>
+        <div class="page-footer__social social">
+            <b class="social__title">Давайте Дружить!</b>
+            <ul class="social__list">
+                <li class="social-item">
+                    <a class="social__link social__link--vkontakte" href="#">Мы в контакте</a>
+                </li>
+                <li class="social-item">
+                    <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+                </li>
+                <li class="social-item">
+                    <a class="social__link social__link--instagram" href="#">Мы в инстаграмме</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright">
+                <div class="copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="copyright__link" href="#">HTML Academy</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove("main-nav--nojs");
+
+    navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+            navMain.classList.remove("main-nav--closed");
+            navMain.classList.add("main-nav--opened");
+        }  else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    });
+
+</script>
+</body>
+</html>
